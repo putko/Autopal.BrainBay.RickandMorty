@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Autopal.BrainBay.RickandMorty.Scrapper.Console": {
+      "commandName": "Project"
+    },
+    "Docker (1)": {
+      "commandName": "Docker"
+    }
+  }
+}

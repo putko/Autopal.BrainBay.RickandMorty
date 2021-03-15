@@ -1,0 +1,70 @@
+﻿@model Autopal.BrainBay.RickandMorty.Domain.Model.Character
+
+@{ ViewBag.Title = "Details"; }
+
+<h2 class="esh-body-title">Details</h2>
+
+<div class="container">
+    <div class="row">
+        <dl class="col-md-4 dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Species)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Species)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+
+        </dl>
+
+        <dl class="col-md-4 dl-horizontal">
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Location)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Location.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Origin)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Origin.Name)
+            </dd>
+
+            <dd class="esh-button-actions">
+
+                @Html.ActionLink("[ Back to List ]", "Index", null, new {@class = "btn esh-button esh-button-secondary"})
+                @Html.ActionLink("[ Edit ]", "Edit", new {id = Model.Id}, new {@class = "btn esh-button esh-button-primary"})
+
+            </dd>
+        </dl>
+    </div>
+</div>

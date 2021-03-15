@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  autopal.brainbay.rickandmorty.scrapper.console:
+  
+  autopal.brainbay.rickandmorty.webapp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - ConnectionString=Server=sqlserverService;Database=RickandMortyDb;User Id=sa;Password=BigPassw0rd
+    ports:
+      - "5001:80"
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro

@@ -1,0 +1,37 @@
+﻿@model Autopal.BrainBay.RickandMorty.Domain.Model.Location
+
+@{ ViewBag.Title = "Details"; }
+
+<h2 class="esh-body-title">Details</h2>
+
+<div class="container">
+    <div class="row">
+        <dl class="col-md-4 dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+        </dl>
+        <dl class="col-md-4 dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+        </dl>
+        <dl class="col-md-4 dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Dimension)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Dimension)
+            </dd>
+        </dl>
+    </div>
+    <div class="row">
+        @Html.Partial("CharacterTable", Model.Residents)
+    </div>
+</div>

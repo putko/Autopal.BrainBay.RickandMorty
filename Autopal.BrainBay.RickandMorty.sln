@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scrapper", "Scrapper", "{6B4CB620-2544-4DBB-8892-6C96CD592D49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{29F1BAAE-79BC-4E6F-AC7A-7A8AB01DA232}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Connector", "Connector", "{46AD4251-9D19-4949-8181-0BC6877602B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autopal.BrainBay.RickandMorty.Scrapper.Console", "Autopal.BrainBay.RickandMorty.Scrapper.Console\Autopal.BrainBay.RickandMorty.Scrapper.Console.csproj", "{63E053EC-709E-4F18-9B2D-246A61B4A410}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autopal.BrainBay.RickandMorty.Scrapper.Business", "Autopal.BrainBay.RickandMorty.Scrapper.Business\Autopal.BrainBay.RickandMorty.Scrapper.Business.csproj", "{04129BD9-9169-49F4-A063-6BEBFFFD74D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autopal.BrainBay.RickandMorty.Scrapper.Connector", "Autopal.BrainBay.RickandMorty.Scrapper.Connector\Autopal.BrainBay.RickandMorty.Scrapper.Connector.csproj", "{3AE3BDF9-6F35-4F34-89CC-0521F3DEBA25}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{458C9E09-5E1D-4FFE-91DF-C6D3AA15A229}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0DBDC51A-3F71-4E13-B863-2D6C011BF753}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autopal.BrainBay.RickandMorty.Domain", "Autopal.BrainBay.RickandMorty.Domain\Autopal.BrainBay.RickandMorty.Domain.csproj", "{3B939F48-193F-4F9A-B4E8-88AC7630E9BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{A9B8B015-E540-41E0-AED8-FFFB19A05B67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autopal.BrainBay.RickandMorty.WebApp", "Autopal.BrainBay.RickandMorty.WebApp\Autopal.BrainBay.RickandMorty.WebApp.csproj", "{9F2BB1AB-6EFF-48A6-A6FF-1EB2E33501E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63E053EC-709E-4F18-9B2D-246A61B4A410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E053EC-709E-4F18-9B2D-246A61B4A410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E053EC-709E-4F18-9B2D-246A61B4A410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E053EC-709E-4F18-9B2D-246A61B4A410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04129BD9-9169-49F4-A063-6BEBFFFD74D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04129BD9-9169-49F4-A063-6BEBFFFD74D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04129BD9-9169-49F4-A063-6BEBFFFD74D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04129BD9-9169-49F4-A063-6BEBFFFD74D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE3BDF9-6F35-4F34-89CC-0521F3DEBA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE3BDF9-6F35-4F34-89CC-0521F3DEBA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE3BDF9-6F35-4F34-89CC-0521F3DEBA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE3BDF9-6F35-4F34-89CC-0521F3DEBA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458C9E09-5E1D-4FFE-91DF-C6D3AA15A229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458C9E09-5E1D-4FFE-91DF-C6D3AA15A229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458C9E09-5E1D-4FFE-91DF-C6D3AA15A229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458C9E09-5E1D-4FFE-91DF-C6D3AA15A229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B939F48-193F-4F9A-B4E8-88AC7630E9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B939F48-193F-4F9A-B4E8-88AC7630E9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B939F48-193F-4F9A-B4E8-88AC7630E9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B939F48-193F-4F9A-B4E8-88AC7630E9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F2BB1AB-6EFF-48A6-A6FF-1EB2E33501E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2BB1AB-6EFF-48A6-A6FF-1EB2E33501E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2BB1AB-6EFF-48A6-A6FF-1EB2E33501E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2BB1AB-6EFF-48A6-A6FF-1EB2E33501E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29F1BAAE-79BC-4E6F-AC7A-7A8AB01DA232} = {6B4CB620-2544-4DBB-8892-6C96CD592D49}
+		{46AD4251-9D19-4949-8181-0BC6877602B6} = {6B4CB620-2544-4DBB-8892-6C96CD592D49}
+		{63E053EC-709E-4F18-9B2D-246A61B4A410} = {6B4CB620-2544-4DBB-8892-6C96CD592D49}
+		{04129BD9-9169-49F4-A063-6BEBFFFD74D9} = {29F1BAAE-79BC-4E6F-AC7A-7A8AB01DA232}
+		{3AE3BDF9-6F35-4F34-89CC-0521F3DEBA25} = {46AD4251-9D19-4949-8181-0BC6877602B6}
+		{3B939F48-193F-4F9A-B4E8-88AC7630E9BE} = {0DBDC51A-3F71-4E13-B863-2D6C011BF753}
+		{9F2BB1AB-6EFF-48A6-A6FF-1EB2E33501E6} = {A9B8B015-E540-41E0-AED8-FFFB19A05B67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14E16DB2-E06B-47CC-89A9-D70586170B65}
+	EndGlobalSection
+EndGlobal

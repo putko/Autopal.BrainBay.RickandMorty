@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Autopal.BrainBay.RickandMorty.Domain.Model.Location>
+
+<table class="table">
+    <thead>
+    <tr class="esh-table-header">
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dimension)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dimension)
+            </td>
+            <td>
+                @Html.ActionLink("Residents", "Details", new {id = item.Name}, new {@class = "esh-table-link"}) |
+            </td>
+        </tr>
+    }
+    </tbody>
+
+</table>

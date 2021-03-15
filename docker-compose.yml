@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  autopal.brainbay.rickandmorty.scrapper.console:
+    links:  
+      - sqlserverService  
+    image: ${DOCKER_REGISTRY-}autopalbrainbayrickandmortyscrapperconsole
+    build:
+      context: .
+      dockerfile: Autopal.BrainBay.RickandMorty.Scrapper.Console/Dockerfile
+  autopal.brainbay.rickandmorty.webapp:
+    links:  
+      - sqlserverService  
+    image: ${DOCKER_REGISTRY-}autopalbrainbayrickandmortywebapp
+    build:
+      context: .
+      dockerfile: Autopal.BrainBay.RickandMorty.WebApp/Dockerfile
+    ports:
+      - 80
+      - 443
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    volumes:
+      - ~/.aspnet/https:/https:ro
+  sqlserverService:  
+    image: microsoft/mssql-server-linux:2017-latest  
+    hostname: 'sqlserver'  
+    container_name: 'Autopal.BrainBay.RickandMorty.SqlServer'
+    environment:  
+      ACCEPT_EULA: Y  
+      SA_PASSWORD: "BigPassw0rd"  
+    volumes:  
+      - ./data/mssql:/var/opt/mssql3  
+    ports:  
+      - '1433:1433'  
+    expose:  
+      - 1433  
